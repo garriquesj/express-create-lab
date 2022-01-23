@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+        />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <!-- toss some css in the main css to styles this and compare to leaving it with just bulma -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+        <script src="/scripts/bulma.js" defer></script>
+        <!-- <script src="/scripts/main.js" defer></script> -->
+
+        <title>full product index</title>
+      
+<body>
+            <!-- ---BULMA STUFF--- -->
+    <nav class="navbar is-dark is-fixed-top"
+        role="navigation"
+        aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/products"> All Products </a>
+            <arole="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            
+        </div>
+
+  </nav><% for(let idx = 0; idx < products.length; idx++){ %><% const product = products[idx] %>
+
+    <img src="<%= product.img %>"}> 
+    <a href="/products/<%= idx %>"><%= product.name %> </a>
+    <p> <%= product.price %></p><% } %>  
+    <!-- linking my js product objects to show on html -->
+</body>
+    </html>

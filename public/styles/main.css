@@ -1,0 +1,39 @@
+h1
+{  
+    font-size: 5px;
+    font-family:Arial;
+    margin:1px;
+    width: 250px;
+  }
+  .title {
+    margin:2px;
+    font-size: 56px;
+    font-family:Arial (sans-serif);
+  }
+  input {
+    width:250px;
+    height:30px;
+    border:1px gray solid;
+    border-radius: 2px;
+    margin: 2px;
+  }
+  .Billing {
+    display:flex;
+    background:gray;
+    font-size:10px;
+    width:250px;
+    height:30px;
+    border-radius:3px;
+    justify-content: space-between;
+  }
+  section {
+    display:grid;
+    justify-content: center;
+    width: 250px;
+    margin:0 auto;
+  }
+  button {
+    color:blue;
+    background-color:transparent;
+    border:none;
+  }

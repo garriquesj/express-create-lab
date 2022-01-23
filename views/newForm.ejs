@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+      <link rel="stylesheet" href="/styles/form.css" />
+  
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+      ></script>
+  <!-- why do i need the line above -->
+      <script src="/scripts/bulma.js" defer></script>
+      <!-- <script src="..public/scripts/main.js" defer></script> -->
+  
+      <title>New product form</title>
+  </head>
+            <nav
+                class="navbar is-dark is-fixed-top"
+                role="navigation"
+                aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/products"> All Products </a>
+
+                    <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarBasicExample"
+                    >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- this will add a link to the new route -->
+                <div class="navbar-menu navbar-end">
+                <a class="navbar-item" href="/products/new"> New Product </a>
+                </div>
+            </nav>
+  <body class="has-navbar-fixed-top">
+
+      <section class ="forming -an opinion">
+          <h6>new Product</h6>
+          <h1 class= "title" > New Product Form<h1>
+            <form actions="/products" method="POST"> 
+              <input type="text" id=text placeholder="Product Name"> </input>
+              <input type="text" id=text placeholder="HTTP"> </input>
+              <input type="text" id=text placeholder="$Price"> </input>
+                      <button>ADD</button>
+            </form>
+         </section>   
+      
+  </body>
+  </html>
