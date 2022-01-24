@@ -33,10 +33,10 @@ res.render('newForm.ejs');
 });
 // ---pushes the forms key value pairs into products---
 app.post('/products/', (req, res) => {
-  console.log('product created route accessed');
-  console.log('Data within req.body: ', req.body);
+  // console.log('product created route accessed');
+  // console.log('Data within req.body: ', req.body);
   products.push(req.body);
-  res.redirects('/products')
+  res.redirect('/products');
   //redirects to products which should include the addition
 });
 // product show route

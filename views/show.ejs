@@ -59,21 +59,22 @@
 
   <div class="container is-max-widescreen p-5">
     <article class="media">
-      <figure class="media-left">
-          <p class="image is-328x328">
-            <img src="<%= product.img %>" alt="product img" />
-          </p>
-      </figure>
+        <figure class="media-left">
+            <p class="image is-328x328">
+              <img src="<%= product.img %>" alt="product img" />
+            </p>
+        </figure>
       <div class="media-content">
         <div class="content">
-          <h3>name: <%= product.name %></h3>
-          <small>price: $<%= product.price %></small>
+          <h3>Name: <%= product.name %></h3>
+          <small>Price: $<%= product.price %></small>
           <div class="field mt-5 is-grouped">
             <div class="control">
               <a class="button is-info" href="/products/<%= product.id %>/edit">Edit Product
               </a>
             </div>
               <p class="control">
+                <!-- not actually deleting, why -->
                 <form action="/products/<%= product.id %>?_method=DELETE" method="POST">
                     <input class="button is-danger" type="submit" value="Delete Product"/>                    
                 </form>
