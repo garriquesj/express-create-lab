@@ -54,9 +54,6 @@ app.get('/products/:id', (req, res) => {
 });
 // render the products object to each .ejs view.
 
-
-
-
 app.listen(PORT, () => {
   console.log("App is running on port: ", PORT);
 });
