@@ -18,6 +18,9 @@ app.set ('view engine', 'ejs');
 // -----use not get----
 app.use(express.static('public'));
 
+// app.get('/', (req, res) => {
+//   res.render('show.ejs');
+//   });tried toying with a homepage didnt work
 // product index route
 app.get('/products', (req, res) => {
 res.render('index.ejs', { products:products});
@@ -42,11 +45,11 @@ app.get('/products/:id', (req, res) => {
   const productsId = products[req.params.id];
   
   // ---error message experment ---
-  if (error) {
-    console.log(error);
-    req.error = error;
-    return next();
-  };
+  // if (error) {
+  //   console.log(error);
+  //   req.error = error;
+  //   return next();
+  // };must define error
   res.render('show.ejs', {product: productsId});
 });
 // render the products object to each .ejs view.
