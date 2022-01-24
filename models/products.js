@@ -1,3 +1,11 @@
+// class Product {
+//   constructor( data, id){
+//     this.id=id;
+//     this.name=data.name;
+//     this.price=data.price;
+//     this.img =data.img;
+//   }
+// }
 module.exports = [
   { 
     name: "Car", 

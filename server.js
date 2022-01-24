@@ -15,7 +15,8 @@ const products = require('./models/products');
 app.set ('view engine', 'ejs');
 // ----set static files---
 //---configure to look in public
-app.set (express.static('public'));
+// -----use not get----
+app.use(express.static('public'));
 
 // product index route
 app.get('/products', (req, res) => {
@@ -39,6 +40,13 @@ app.post('/products/', (req, res) => {
 // ---shows one product at a time id reperesnts index number---
 app.get('/products/:id', (req, res) => {
   const productsId = products[req.params.id];
+  
+  // ---error message experment ---
+  if (error) {
+    console.log(error);
+    req.error = error;
+    return next();
+  };
   res.render('show.ejs', {product: productsId});
 });
 // render the products object to each .ejs view.
