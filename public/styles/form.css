@@ -1,3 +1,5 @@
+
+
 body {  
   font-size: 5px;
     font-family:Arial (sans-serif);
@@ -16,15 +18,7 @@ body {
     border-radius: 2px;
     margin: 2px;
   }
-  .Billing {
-    display:flex;
-    background:gray;
-    font-size:10px;
-    width:250px;
-    height:30px;
-    border-radius:3px;
-    justify-content: space-between;
-  }
+  
   section {
     display:grid;
     justify-content: center;

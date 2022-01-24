@@ -19,8 +19,8 @@ app.set (express.static('public'));
 
 // product index route
 app.get('/products', (req, res) => {
-res.render('index.ejs', {products:products});
-});
+res.render('index.ejs', { products:products});
+});// render the products object to each .ejs view.
 
 // product create route
 // ---gets the form---
